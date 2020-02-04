@@ -1,6 +1,6 @@
 # Tacotron
 
-An implementation of Tacotron speech synthesis in TensorFlow for Nepali Dataset.
+An implementation of Tacotron speech synthesis in TensorFlow (Modified to use for Nepali Dataset.)
 
 
 ### Audio Samples
