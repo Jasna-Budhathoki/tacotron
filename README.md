@@ -113,6 +113,8 @@ Pull requests are welcome!
    ```
      * Use `--dataset blizzard` for Blizzard data
      * Use `--dataset nepali` for Nepali data
+        * For nepali dataset [hparams.py](hparams.py) is set to `cleaners='transliteration_cleaners'`. 
+        If you are using other dataset, change it to default. 
 
 4. **Train a model**
    ```
@@ -125,10 +127,7 @@ Pull requests are welcome!
    The default hyperparameters are recommended for LJ Speech and other English-language data.
    See [TRAINING_DATA.md](TRAINING_DATA.md) for other languages.
    
-   * For nepali dataset [hparams.py](hparams.py) is set to `cleaners='transliteration_cleaners'`. If you are using other dataset, change
-   it to default. 
-   
-   * Also for nepali dataset use `python3 train.py --hparams="max_iters=300"`. See `Notes and Common Issues` for details.
+   * For nepali dataset use `python3 train.py --hparams="max_iters=300"`. See `Notes and Common Issues` for details.
 
 
 5. **Monitor with Tensorboard** (optional)
