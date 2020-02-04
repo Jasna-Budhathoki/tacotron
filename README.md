@@ -1,6 +1,6 @@
 # Tacotron
 
-An implementation of Tacotron speech synthesis in TensorFlow.
+An implementation of Tacotron speech synthesis in TensorFlow for Nepali Dataset.
 
 
 ### Audio Samples
@@ -99,7 +99,7 @@ Pull requests are welcome!
              |- lab
              |- wav
    ```
-   
+   For nepali TTS the folder should look like(the extracted folder is renamed to `nepali` for simplicity)
       ```
    tacotron
      |- nepali
@@ -112,6 +112,7 @@ Pull requests are welcome!
    python3 preprocess.py --dataset ljspeech
    ```
      * Use `--dataset blizzard` for Blizzard data
+     * Use `--dataset nepali` for Nepali data
 
 4. **Train a model**
    ```
@@ -123,6 +124,11 @@ Pull requests are welcome!
    Hyperparameters should generally be set to the same values at both training and eval time.
    The default hyperparameters are recommended for LJ Speech and other English-language data.
    See [TRAINING_DATA.md](TRAINING_DATA.md) for other languages.
+   
+   * For nepali dataset [hparams.py](hparams.py) is set to `cleaners='transliteration_cleaners'`. If you are using other dataset, change
+   it to default. 
+   
+   * Also for nepali dataset use `python3 train.py --hparams="max_iters=300"`. See `Notes and Common Issues` for details.
 
 
 5. **Monitor with Tensorboard** (optional)
@@ -181,6 +187,7 @@ Pull requests are welcome!
   * Here is the expected loss curve when training on LJ Speech with the default hyperparameters:
     ![Loss curve](https://user-images.githubusercontent.com/1945356/36077599-c0513e4a-0f21-11e8-8525-07347847720c.png)
 
+  * In this fork the basedir should be noted as `~/PycharmProjects/tacotron`, please modify path location according to your cloning dir.
 
 ## Other Implementations
   * By Alex Barron: https://github.com/barronalex/Tacotron
