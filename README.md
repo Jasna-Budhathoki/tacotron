@@ -71,6 +71,7 @@ Pull requests are welcome!
    The following are supported out of the box:
     * [LJ Speech](https://keithito.com/LJ-Speech-Dataset/) (Public Domain)
     * [Blizzard 2012](http://www.cstr.ed.ac.uk/projects/blizzard/2012/phase_one) (Creative Commons Attribution Share-Alike)
+    * [ne_np_female](https://research.google/tools/datasets/nepali-tts/) (Creative Commons Attribution Share-Alike)
 
    You can use other datasets if you convert them to the right format. See [TRAINING_DATA.md](TRAINING_DATA.md) for more info.
 
@@ -97,6 +98,13 @@ Pull requests are welcome!
              |- sentence_index.txt
              |- lab
              |- wav
+   ```
+   
+      ```
+   nepali
+     |- LJSpeech-1.1
+         |- line_index.tsv
+         |- wavs
    ```
 
 3. **Preprocess the data**
@@ -177,3 +185,4 @@ Pull requests are welcome!
 ## Other Implementations
   * By Alex Barron: https://github.com/barronalex/Tacotron
   * By Kyubyong Park: https://github.com/Kyubyong/tacotron
+  
