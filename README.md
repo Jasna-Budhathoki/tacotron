@@ -101,8 +101,8 @@ Pull requests are welcome!
    ```
    
       ```
-   nepali
-     |- LJSpeech-1.1
+   tacotron
+     |- nepali
          |- line_index.tsv
          |- wavs
    ```
