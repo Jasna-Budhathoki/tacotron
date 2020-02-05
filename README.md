@@ -51,14 +51,21 @@ Pull requests are welcome!
    ```
    curl http://data.keithito.com/data/speech/tacotron-20180906.tar.gz | tar xzC /tmp
    ```
+   FOR NEPALI:
+   Download [NEPALI PRETRAINED MODEL](https://drive.google.com/open?id=1P6tyIYZiTG2_6wPim4IRGZrNEYadJrU6) on 30k iterations.
 
 2. **Run the demo server**:
    ```
    python3 demo_server.py --checkpoint /tmp/tacotron-20180906/model.ckpt
    ```
+   FOR NEPALI DEMO:
+   ```
+   python3 demo_server.py --checkpoint <full_path_to_pretrained_model>/model.ckpt-30000
+    ```
 
 3. **Point your browser at localhost:9000**
    * Type what you want to synthesize
+   * FOR NEPALI USE NEPALI UNICODE SENTENCES.
 
 
 
