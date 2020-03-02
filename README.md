@@ -38,7 +38,7 @@ An implementation of Tacotron speech synthesis in TensorFlow (Modified to use fo
 
     * [ne_np_female](https://research.google/tools/datasets/nepali-tts/) (Creative Commons Attribution Share-Alike)
 
-2. **Unpack the dataset into `~/tacotron`**
+2. **Unpack the dataset into `~/PycharmProjects/tacotron`**
    For nepali TTS the folder should look like(the extracted folder is renamed to `nepali` for simplicity)
       ```
    tacotron
