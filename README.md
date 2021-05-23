@@ -21,8 +21,7 @@ An implementation of Tacotron speech synthesis in TensorFlow (Modified to use fo
 
 1. **Download and unpack a model**:
    FOR NEPALI:
-   Download [NEPALI PRETRAINED MODEL](https://drive.google.com/open?id=1P6tyIYZiTG2_6wPim4IRGZrNEYadJrU6) on 30/50k iterations. The best result is obtained above 
-75k iterations.
+   Download [NEPALI PRETRAINED MODEL](https://drive.google.com/open?id=1P6tyIYZiTG2_6wPim4IRGZrNEYadJrU6) on 30, 50 and 75k iterations. For the better results use the model checkpoint trained on 75k iteration.
 
 2. **Run the demo server**:
    FOR NEPALI DEMO:
