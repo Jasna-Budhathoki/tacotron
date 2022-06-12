@@ -25,6 +25,7 @@ def build_from_path(in_dir, out_dir, num_workers=1, tqdm=lambda x: x):
   index = 1
   with open(os.path.join(in_dir, 'line_index.tsv'), encoding='utf-8') as f:
     for line in f:
+      print(line)
       parts = line.strip().split('\t')
       wav_path = os.path.join(in_dir, 'wavs', '%s.wav' % parts[0])
       text = parts[1]
