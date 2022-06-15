@@ -1,0 +1,9 @@
+version: "3"
+services:
+    tts:
+        container_name: baato-tts
+        image: "baato_tts:latest"
+        command: /bin/sh -c "/usr/src/app/tacotron/train.sh"
+        volumes:
+            - ./logs :/usr/src/app/tacotron/logs-tacotron
+            - ./nepali:/usr/src/app/tacotron/nepali
