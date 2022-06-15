@@ -62,7 +62,7 @@ import os
 from multiprocessing import cpu_count
 from tqdm import tqdm
 from datasets import blizzard, ljspeech, nepali
-from tacotron.hparams import hparams
+from hparams import hparams
 
 
 def preprocess_blizzard(args):
