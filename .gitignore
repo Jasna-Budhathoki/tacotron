@@ -24,4 +24,5 @@ nepali/
 training/
 *DS_Store
 *.zip
-
+/pretrained_model
+/logs
